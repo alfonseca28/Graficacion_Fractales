@@ -17,8 +17,8 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Mandelbrot1 extends JFrame {
 
-    private final int MAX_ITER = 650;
-    private final double ZOOM = 250;
+    private final int MAX_ITER = 700;
+    private final double ZOOM = 200;
     private BufferedImage I;
     private double zx, zy, cX, cY, tmp;
 
@@ -36,7 +36,7 @@ public class Mandelbrot1 extends JFrame {
                 int iter = MAX_ITER;
                 while (zx * zx + zy * zy < 4 && iter > 0) {
                     tmp = zx * zx - zy * zy + cX;
-                    zy = 2.0 * zx * zy + cY;
+                    zy = -2.0 * zx * zy + cY;
                     zx = tmp;
                     iter--;
                 }

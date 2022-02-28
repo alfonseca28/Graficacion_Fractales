@@ -34,13 +34,13 @@ public class Mandelbrot2 extends JFrame {
                 cX = (x - 450) / ZOOM;
                 cY = (y - 300) / ZOOM;
                 int iter = MAX_ITER;
-                while (zx * zx + zy * zy < 3 && iter > 0) {
-                    tmp = zx * zx - zy * zy + cX;
+                while (zx * zx + zy * zy < 4 && iter > 0) {
+                    tmp = Math.pow(zx, 2) - Math.pow(zy, 2) + cX;
                     zy = 2.0 * zx * zy + cY;
                     zx = tmp;
                     iter--;
                 }
-                I.setRGB(x, y, iter | (iter << 14));
+                I.setRGB(x, y, iter | (iter << 11));
             }
         }
     }
