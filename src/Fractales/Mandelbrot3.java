@@ -31,12 +31,12 @@ public class Mandelbrot3 extends JFrame {
         for (int y = 0; y < getHeight(); y++) {
             for (int x = 0; x < getWidth(); x++) {
                 zx = zy = 0;
-                cX = (x - 500) / ZOOM;
+                cX = (x - 400) / ZOOM;
                 cY = (y - 300) / ZOOM;
                 int iter = MAX_ITER;
-                while (zx * zx + zy * zy < 9 && iter > 0) {
-                    tmp = zx * zx - zy * zy + cX;
-                    zy = 3.0 * zx * zy + cY;
+                while (zx * zx + zy * zy < 4 && iter > 0) {
+                    tmp = zx * zx * zx * zx * zx - 10.0 * zx * zx * zx * zy * zy + 5.0 * zx * zy * zy * zy * zy + cX;
+                    zy = 5.0 * zx * zx * zx * zx * zy - 10.0 * zx * zx * zy * zy * zy + zy * zy * zy * zy * zy + cY;
                     zx = tmp;
                     iter--;
                 }
