@@ -65,7 +65,7 @@ public class JuliaExample {
             for (int j = 0; j < HEIGHT; j++) {
                 // If the point is in the Set, color it White, else, color it Black.
                 if (values[i][j]) {
-                    image.setRGB(i, j, Color.YELLOW.getRGB());
+                    image.setRGB(i, j, Color.CYAN.getRGB());
                 }
                 if (!values[i][j]) {
                     image.setRGB(i, j, Color.DARK_GRAY.getRGB());
