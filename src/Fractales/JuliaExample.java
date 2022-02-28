@@ -68,7 +68,7 @@ public class JuliaExample {
                     image.setRGB(i, j, Color.YELLOW.getRGB());
                 }
                 if (!values[i][j]) {
-                    image.setRGB(i, j, Color.BLUE.getRGB());
+                    image.setRGB(i, j, Color.DARK_GRAY.getRGB());
                 }
             }
         }
@@ -145,7 +145,7 @@ class ComplexNumber {
 
     // Method for squaring a ComplexNumber
     public ComplexNumber square() {
-        return new ComplexNumber(this.a * this.a - this.b * this.b, 2 * this.a * this.b);
+        return new ComplexNumber(this.a * this.a+b - this.b * this.b, 2 * this.a * this.b+a);
     }
 
     // Method for adding 2 complex numbers
