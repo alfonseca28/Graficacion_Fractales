@@ -2,7 +2,8 @@ package Fractales;
 
 /**
  * ****************************************************************************
- * Compilation: javac Mandelbrot1.java Execution: java Mandelbrot xc yc size Dependencies: StdDraw.java
+ * Compilation: javac Mandelbrot1.java Execution: java Mandelbrot xc yc size
+ * Dependencies: StdDraw.java
  *
  * Plots the size-by-size region of the Mandelbrot set, centered on (xc, yc)
  *
