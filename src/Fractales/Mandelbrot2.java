@@ -2,7 +2,8 @@ package Fractales;
 
 /**
  * ****************************************************************************
- * Compilation: javac Mandelbrot2.java Execution: java Mandelbrot xc yc size Dependencies: StdDraw.java
+ * Compilation: javac Mandelbrot2.java Execution: java Mandelbrot xc yc size
+ * Dependencies: StdDraw.java
  *
  * Plots the size-by-size region of the Mandelbrot set, centered on (xc, yc)
  *
@@ -18,7 +19,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class Mandelbrot2 extends JFrame {
 
     private final int MAX_ITER = 1234;
-    private final double ZOOM = 250;
+    private final double ZOOM = 260;
     private BufferedImage I;
     private double zx, zy, cX, cY, tmp;
 
